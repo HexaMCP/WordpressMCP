@@ -1,0 +1,44 @@
+{
+  "name": "wordpress",
+  "version": "1.0.0",
+  "description": "WordPress MCP Server for interacting with WordPress sites via REST API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start:sse": "node index.js --transport=sse --port=3000",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "mcp",
+    "wordpress",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "body-parser": "^2.2.0",
+    "eventsource": "^2.0.2",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.0",
+    "minimist": "^1.2.8",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.3.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-env": "^7.26.9",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-jest": "^27.9.0",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
